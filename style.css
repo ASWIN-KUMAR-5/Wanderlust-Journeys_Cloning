@@ -1,0 +1,200 @@
+/* Global styling */
+
+.container {
+    margin-top: 30px;
+}
+
+.alt1 {
+    padding: 30px;
+    background-color: #F8F8F8;
+}
+
+.alt2{
+    padding: 30px;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Home section*/
+.hero-section {
+    background: url('./images/hero-background.jpg') no-repeat center center/cover; /* Replace with your image */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; 
+    position: relative;
+}
+
+.hero-section::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content p{
+    font-size: 20px;
+}
+
+/*button --> Start your journey*/
+
+.primary-button {
+    background-color: #2C7873;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 50px; 
+    border: none;   
+    font-size: 1.2em;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: inline-block; 
+    text-align: center;
+}
+
+.primary-button:hover {
+    background-color: #FF8C42;
+    cursor: pointer;
+}
+
+/* destinations */
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* impact */
+
+.impact-numbers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+}
+
+.impact-item h3 {
+    font-size: 3.5em;
+    color: #FF8C42;
+    margin-bottom: 10px;
+}
+
+.impact-item p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+
+/* Blog */
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.blog-posts-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-posts-card h3 {
+    margin: 20px 20px 0px;
+    color: #2C7873;
+}
+
+.blog-posts-card p {
+    padding: 0 30px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.blog-posts-card .read-more{
+    color: #FF8C42;
+    font-weight: bold;
+    margin: 15px 20px 20px;
+    text-align: right;
+}
+
+/* Our Adventures say --> feedback  */
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feedback-card {
+    background-color: #F8F8F8; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-card p {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.feedback-card cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #2C7873;
+}
+
+/* contact */
+
+.contact {
+    color: #333333;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9em;
+    width: auto;
+    height: auto;
+}
+
+/* footer */
+
+footer {
+    background-color: #333333; 
+    color: #CCCCCC;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #CCCCCC;
+    margin: 0 5px;
+}
+
